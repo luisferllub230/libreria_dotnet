@@ -55,6 +55,7 @@ namespace BibliotecaApi.Controllers
         }
 
         [HttpPost("prestamos")]
+        [Authorize]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> PostPrestamo([FromBody] NewPrestamoDto dto)
@@ -113,6 +114,7 @@ namespace BibliotecaApi.Controllers
         }
 
         [HttpPut("prestamos/{id}")]
+        [Authorize]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -147,6 +149,7 @@ namespace BibliotecaApi.Controllers
         }
 
         [HttpDelete("prestamos/{id}")]
+        [Authorize]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> DeletePrestamo(int id)

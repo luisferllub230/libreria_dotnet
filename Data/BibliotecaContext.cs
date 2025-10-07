@@ -10,4 +10,5 @@ public class BibliotecaContext : DbContext
     public DbSet<Autor> Autores { get; set; } = null!;
     public DbSet<Libro> Libros { get; set; } = null!;
     public DbSet<Prestamo> Prestamos { get; set; } = null!;
+    public DbSet<Usuario> Usuarios { get; set; } = null!;
 }

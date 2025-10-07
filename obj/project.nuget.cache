@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "NjmFoRP7Vl92ALmPWMOx4e7FSqKO0BysNlOVrNzxVXk2IHRRCit3ZOw/2JyHXblquHvW6ZtJv7OJur3gYU7olg==",
+  "dgSpecHash": "GHjuFiosn2c/7IFisUuBzKnsxcJu7KT5SCEcaTn7hIuYHXTK3pbplGonVmfqSQ50HEiSD6qiK3equZxExU6sJw==",
   "success": true,
   "projectFilePath": "/home/lfernandez/BibliotecaApi/BibliotecaApi.csproj",
   "expectedPackageFiles": [
     "/home/lfernandez/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/home/lfernandez/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/6.0.0/microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/microsoft.aspnetcore.openapi/8.0.14/microsoft.aspnetcore.openapi.8.0.14.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/microsoft.build.framework/17.8.3/microsoft.build.framework.17.8.3.nupkg.sha512",
@@ -35,6 +36,8 @@
     "/home/lfernandez/.nuget/packages/microsoft.identitymodel.abstractions/8.14.0/microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.14.0/microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/microsoft.identitymodel.logging/8.14.0/microsoft.identitymodel.logging.8.14.0.nupkg.sha512",
+    "/home/lfernandez/.nuget/packages/microsoft.identitymodel.protocols/6.10.0/microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
+    "/home/lfernandez/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.10.0/microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/microsoft.identitymodel.tokens/8.14.0/microsoft.identitymodel.tokens.8.14.0.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
