@@ -48,31 +48,50 @@ namespace BibliotecaApi.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> PostLibro([FromBody] LibroCreacionDto dto)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
+            
             var libro = new Libro
             {
                 Titulo = dto.Titulo,
                 AnioPublicacion = dto.AnioPublicacion,
-                AutorId = dto.AutorId
+                AutorId = dto.AutorId,
+                Genero = dto.Genero
             };
 
-            if (libro.AutorId != null)
+            var autor = await _context.Autores.FindAsync(libro.AutorId);
+            if (autor == null)
             {
-                var autor = await _context.Autores.FindAsync(libro.AutorId);
-                if (autor == null)
-                {
-                    return BadRequest("El autor especificado no existe.");
-                }
+                return BadRequest("El autor especificado no existe.");
             }
 
+            libro.Autor = autor; 
             _context.Libros.Add(libro);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetLibro), new { id = libro.LibroId }, libro);
+            var responseDto = new LibroCreacionDto
+            {
+                LibroId = libro.LibroId,
+                Titulo = libro.Titulo,
+                AnioPublicacion = libro.AnioPublicacion,
+                Genero = libro.Genero,
+                AutorId = libro.AutorId
+            };
+            
+            return CreatedAtAction(nameof(GetLibro), new { id = libro.LibroId }, responseDto); 
+        }
+
+        [HttpGet("libros/{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetLibro(int id)
+        {
+            var libro = await _context.Libros.FindAsync(id);
+
+            if (libro == null)
+            {
+                return NotFound($"Libro con ID {id} no encontrado.");
+            }
+
+            return Ok(libro);
         }
     }
 }

@@ -36,32 +36,6 @@ public class PrestamosController : ControllerBase
         return Ok(resultados);
     }
 
-    // [HttpPost("libros")]
-    // [Authorize(Roles = "admin")]
-    // [ProducesResponseType(StatusCodes.Status201Created)]
-    // [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    // public async Task<IActionResult> PostLibro([FromBody] LibroCreacionDto dto)
-    // {
-    //     var autorExiste = await _context.Autores.AnyAsync(a => a.AutorId == dto.AutorId);
-    //     if (!autorExiste)
-    //     {
-    //         return BadRequest(new { Message = $"El Autor {dto.AutorId} no existe." });
-    //     }
-
-    //     var nuevoLibro = new Libro
-    //     {
-    //         Titulo = dto.Titulo,
-    //         AutorId = dto.AutorId,
-    //         AnioPublicacion = dto.AnioPublicacion,
-    //         Genero = dto.Genero
-    //     };
-
-    //     _context.Libros.Add(nuevoLibro);
-    //     await _context.SaveChangesAsync();
-
-    //     return CreatedAtAction(nameof(GetLibrosAntesDe2000), new { id = nuevoLibro.LibroId }, nuevoLibro);
-    // }
-
     [HttpPut("prestamos/{id}")]
     [Authorize(Roles = "admin,usuario_regular")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
