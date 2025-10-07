@@ -11,5 +11,4 @@ public class LibroCreacionDto
     [Required]
     [Range(1000, 2024)]
     public int AnioPublicacion { get; set; }
-    public string Genero { get; set; } = string.Empty;
 }

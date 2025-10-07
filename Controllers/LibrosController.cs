@@ -23,10 +23,10 @@ namespace BibliotecaApi.Controllers
             {
                 var libros = await _context.Libros
                     .Where(l => l.AnioPublicacion < 2000)
-                    .Select(l => new {
-                        l.LibroId,
-                        l.Titulo,
-                        l.AnioPublicacion
+                    .Select(l => new LibroCreacionDto {
+                        LibroId = l.LibroId,
+                        Titulo = l.Titulo,
+                        AnioPublicacion = l.AnioPublicacion,
                     })
                     .ToListAsync();
 
@@ -72,8 +72,6 @@ namespace BibliotecaApi.Controllers
                 LibroId = libro.LibroId,
                 Titulo = libro.Titulo,
                 AnioPublicacion = libro.AnioPublicacion,
-                Genero = libro.Genero,
-                AutorId = libro.AutorId
             };
             
             return CreatedAtAction(nameof(GetLibro), new { id = libro.LibroId }, responseDto); 
