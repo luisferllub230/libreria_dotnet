@@ -9,7 +9,7 @@ public class LibroCreacionDto
     [Required]
     public int AutorId { get; set; }
     [Required]
-    public string Genero { get; set; }
+    public string Genero { get; set; } = string.Empty;
     [Required]
     [Range(1000, 2024)]
     public int AnioPublicacion { get; set; }
