@@ -27,6 +27,8 @@ namespace BibliotecaApi.Controllers
                         LibroId = l.LibroId,
                         Titulo = l.Titulo,
                         AnioPublicacion = l.AnioPublicacion,
+                        AutorId = l.AutorId,
+                        Genero = l.Genero
                     })
                     .ToListAsync();
 
@@ -71,6 +73,7 @@ namespace BibliotecaApi.Controllers
             {
                 LibroId = libro.LibroId,
                 Titulo = libro.Titulo,
+                Genero = libro.Genero,
                 AnioPublicacion = libro.AnioPublicacion,
             };
             
