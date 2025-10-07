@@ -133,3 +133,8 @@
 /home/lfernandez/BibliotecaApi/obj/Debug/net8.0/BibliotecaApi.pdb
 /home/lfernandez/BibliotecaApi/obj/Debug/net8.0/BibliotecaApi.genruntimeconfig.cache
 /home/lfernandez/BibliotecaApi/obj/Debug/net8.0/ref/BibliotecaApi.dll
+/home/lfernandez/BibliotecaApi/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/home/lfernandez/BibliotecaApi/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/lfernandez/BibliotecaApi/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/home/lfernandez/BibliotecaApi/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/home/lfernandez/BibliotecaApi/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll

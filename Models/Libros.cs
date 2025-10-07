@@ -15,7 +15,7 @@ public class Libro
     // Clave Foránea
     public int AutorId { get; set; }
     [ForeignKey("AutorId")]
-    public Autor Autor { get; set; } = null!; // Relación
+    public Autor Autor { get; set; } = null!;
 
     // Relación
     public ICollection<Prestamo> Prestamos { get; set; } = new List<Prestamo>();

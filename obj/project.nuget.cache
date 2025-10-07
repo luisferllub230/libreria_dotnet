@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YED4daI+IkVbLnCtCQ97Zuvwe5hvsCWC9ni3czZ1RaHBzi+bNaeOE7IxlWKlVR8KR6PxyZbcr7FAOSEFz9jzsw==",
+  "dgSpecHash": "NjmFoRP7Vl92ALmPWMOx4e7FSqKO0BysNlOVrNzxVXk2IHRRCit3ZOw/2JyHXblquHvW6ZtJv7OJur3gYU7olg==",
   "success": true,
   "projectFilePath": "/home/lfernandez/BibliotecaApi/BibliotecaApi.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,10 @@
     "/home/lfernandez/.nuget/packages/microsoft.extensions.logging.abstractions/9.0.9/microsoft.extensions.logging.abstractions.9.0.9.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/microsoft.extensions.options/9.0.9/microsoft.extensions.options.9.0.9.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/microsoft.extensions.primitives/9.0.9/microsoft.extensions.primitives.9.0.9.nupkg.sha512",
+    "/home/lfernandez/.nuget/packages/microsoft.identitymodel.abstractions/8.14.0/microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
+    "/home/lfernandez/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.14.0/microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg.sha512",
+    "/home/lfernandez/.nuget/packages/microsoft.identitymodel.logging/8.14.0/microsoft.identitymodel.logging.8.14.0.nupkg.sha512",
+    "/home/lfernandez/.nuget/packages/microsoft.identitymodel.tokens/8.14.0/microsoft.identitymodel.tokens.8.14.0.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/npgsql/9.0.3/npgsql.9.0.3.nupkg.sha512",
@@ -49,6 +53,7 @@
     "/home/lfernandez/.nuget/packages/system.composition.runtime/7.0.0/system.composition.runtime.7.0.0.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/system.composition.typedparts/7.0.0/system.composition.typedparts.7.0.0.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/system.diagnostics.diagnosticsource/9.0.9/system.diagnostics.diagnosticsource.9.0.9.nupkg.sha512",
+    "/home/lfernandez/.nuget/packages/system.identitymodel.tokens.jwt/8.14.0/system.identitymodel.tokens.jwt.8.14.0.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/system.io.pipelines/9.0.9/system.io.pipelines.9.0.9.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/system.reflection.metadata/7.0.0/system.reflection.metadata.7.0.0.nupkg.sha512",
     "/home/lfernandez/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
